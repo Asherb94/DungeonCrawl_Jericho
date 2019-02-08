@@ -17,8 +17,11 @@ public class Splash
 		Scanner scan = new Scanner(System.in);
 
      printWithDelays("....What if I told you that you were in the fight for your life. \n",TimeUnit.MILLISECONDS, 70);
-     printWithDelays("A fight against an ancient evil that came from above.  \n",TimeUnit.MILLISECONDS, 70);	
-     printWithDelays("The battle for good and evil is always raging around us. \n",TimeUnit.MILLISECONDS, 70);	
+     printWithDelays("A fight against an ancient evil that came from above.  \n",TimeUnit.MILLISECONDS, 70);
+     printWithDelays("Who raged war against the world of men.  \n",TimeUnit.MILLISECONDS, 70);
+     printWithDelays("Took their gold and silver and burried it deep underground. \n",TimeUnit.MILLISECONDS, 70);
+     printWithDelays(".....But that was centries ago....they say. \n",TimeUnit.MILLISECONDS, 70);
+     printWithDelays("Now they do not believe.  \n",TimeUnit.MILLISECONDS, 70);
      printWithDelays("Do you believe this? \n",TimeUnit.MILLISECONDS, 70);	
      //printWithDelays("....Can you see it?....Can you feel it?.....Do you even know? \n",TimeUnit.MILLISECONDS, 80);		
      /*printWithDelays("....Can you feel it? \n",TimeUnit.MILLISECONDS, 80);		
