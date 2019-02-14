@@ -191,6 +191,7 @@ public static void printWithDelays(String data, TimeUnit unit, long delay) throw
         if (runAway == 0 && hero.getHitPoints() > 0) 
         {
             System.out.print("\n\n\n\tYou gain strength and health from your experience\n");
+            System.out.print("\t\t+1 HP +1 ST +" + monster.getGold() + " Gold\n");
             hero.setMaxHitPoints(hero.getMaxHitPoints()+1);
             hero.setHitPoints(hero.getHitPoints()+1);
             

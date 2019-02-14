@@ -47,8 +47,8 @@ public class DungeonCrawl extends Scenes{
 	static void sceneSelect( int scene ) throws IOException, InterruptedException
 	{
      //Final Monster Health and Strength 
-	  if      ( scene== 0 ) scene00();//1 gold   				/* monster-hitpoints, monster-strength  */
-	  else if ( scene== 1 )  {BatScene( 1, 1); deachCall();BatScene( 3, 2);} // Bat 2 2
+	  if      ( scene== 0 ) scene00();//1 gold   /* monster-hitpoints, monster-strength  */
+	  else if ( scene== 1 )  {BatScene( 1, 1); deathCall();BatScene( 3, 2);} // Bat 2 2
 	  else if ( scene== 2 ) PumpkinScene( 4, 4);//Bat 3 3
 	  else if ( scene== 3 ) SmallChestScene( 0, 0);// chest 
 	  else if ( scene== 4 ) MouseScene( 4, 4);// Mouse 
@@ -76,7 +76,7 @@ public class DungeonCrawl extends Scenes{
 		    }
 	  }
 	  
-	  public static void deachCall (){
+	  public static void deathCall (){
 		  if ( hero.getHitPoints() <= 0 )
 		  {
 		    System.out.print("\n\nYou Lose.\n");
@@ -138,7 +138,7 @@ public class DungeonCrawl extends Scenes{
 			  }
 			  
 			  /* End of Game Summary */
-			  deachCall();
+			  deathCall();
 /*			  if ( hero.getHitPoints() <= 0 )
 			  {
 			    System.out.print("\n\nYou Lose.\n");

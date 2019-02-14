@@ -22,10 +22,7 @@ public class Splash
      printWithDelays("Took their gold and silver and burried it deep underground. \n",TimeUnit.MILLISECONDS, 70);
      printWithDelays(".....But that was centries ago....they say. \n",TimeUnit.MILLISECONDS, 70);
      printWithDelays("Now they do not believe.  \n",TimeUnit.MILLISECONDS, 70);
-     printWithDelays("Do you believe this? \n",TimeUnit.MILLISECONDS, 70);	
-     //printWithDelays("....Can you see it?....Can you feel it?.....Do you even know? \n",TimeUnit.MILLISECONDS, 80);		
-     /*printWithDelays("....Can you feel it? \n",TimeUnit.MILLISECONDS, 80);		
-     printWithDelays(".....Do you even know? \n",TimeUnit.MILLISECONDS, 80);*/		
+     printWithDelays("Do you believe this? \n",TimeUnit.MILLISECONDS, 70);			
      System.out.println("\n     (Hit Enter)");
      if (scan.hasNextLine()){
 	 }	
@@ -39,23 +36,24 @@ public class Splash
      System.out.print(" ==================================\n");
   
 	  
-/*System.out.println("        *     ///_,");
+System.out.println("        *     ///_,");
 System.out.println("       *     / ` ' '>");
 System.out.println("         )  o o __/_'>");
 System.out.println("      (    /  _/  )_\'>");
-System.out.println("        ( \'__/   /_//_>");
+System.out.println("        ( \'_'_/   /_//_>");
 System.out.println("            ____/_/_/_/");
 System.out.println("           /,---, _/ /|");
 System.out.println("          {{   /_/_/_/|"+"                    ");
 System.out.println("             /_(_ (_ (_|                 _    ");
-System.out.println("            (   /_/_/_|"       +"                / ) |   ");   
-System.out.println("            \'__/_/_/_/__              )   /  ");
-System.out.println("             //____|___/__)          / _ /");
-System.out.println("             |  _  \'___'_(          /_   '  ");
-System.out.println("              /_ (-'/'___'_/      __,'_'");
+System.out.println("            (   /_/_/_|"       +"       / ) |   ");   
+System.out.println("            \'__/_/_/_/__              /_ ) ");
+System.out.println("             //____|___/__)           /_ /");
+System.out.println("             |  _  \'___'_(          /_ '  ");
+System.out.println("              /_ (-'/'___'_/      __/'_' ");
 System.out.println("              __) /  \\___(_   __/.__,'");
 System.out.println("           ,((,-,__/  '"+"_ /_ /_ /   /");
-System.out.println("                        '"+"./_._._-'");*/
+System.out.println("                        '"+"./_._._-'");
+
 
 
 	} 

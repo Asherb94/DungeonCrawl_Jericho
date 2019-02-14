@@ -18,8 +18,8 @@ public class Monster {
 	  
 	  public void Summary(){
 		  System.out.println(getName() + ": " + this.hitPoints + "/" 
-				  + this.maxHitPoints + "HP; " + this.strength + "/" + this.maxStrength 
-				  + " ST; " + this.gold + " Gold");//"Monster " + 
+				  + this.maxHitPoints + " HP; " + this.strength + "/" + this.maxStrength 
+				  + " ST; " + "? " + "Gold"); //+ this.gold + " Gold"); (this hides the gold display for player) 
 	  }
 
 	public static int getHitPoints() {
