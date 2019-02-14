@@ -14,7 +14,7 @@ public class BatScene {
 		objDungeon.heroSummary();
 		monster.Summary();
 		
-		sortie srt = new sortie(hero, monster);//call to sortie 
+		BattleSys srt = new BattleSys(hero, monster);//call to sortie 
 		
 
 		if(monster.getHitPoints()<=0 && hero.getHitPoints()>0){

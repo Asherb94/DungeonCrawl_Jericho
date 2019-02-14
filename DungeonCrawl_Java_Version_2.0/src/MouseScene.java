@@ -21,7 +21,7 @@ public class MouseScene {
 		
 		
 
-		sortie sortie = new sortie(hero, monster);//Call to sortie
+		BattleSys sortie = new BattleSys(hero, monster);//Call to sortie
 		
 		if (hero.getHitPoints() > 0 && monster.getHitPoints() <= 0){
 			scene03part2();

@@ -44,7 +44,7 @@ public class Shrek {
 		
 		Monster monster = new Monster("Shrek", monsterHit, monsterStr, 0);
 		monster.Summary();
-		sortie sort = new sortie(hero, monster);
+		BattleSys sort = new BattleSys(hero, monster);
 		
 	}
 

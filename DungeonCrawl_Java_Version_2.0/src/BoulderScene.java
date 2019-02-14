@@ -35,7 +35,7 @@ public class BoulderScene {
 					Monster monster = new Monster("Skeleton Hand", 10, 3, 0);
 					objDungeon.heroSummary();
 					monster.Summary();
-					sortie sortie = new sortie(hero, monster);
+					BattleSys objBattle = new BattleSys(hero, monster);
 					if(hero.getHitPoints()> 0){
 						System.out.println("You find 5 gold coins in the chest.");
 						hero.setGold(hero.getGold()+5);

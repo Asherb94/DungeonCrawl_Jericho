@@ -48,7 +48,7 @@ public class WizardScene {
     	    	System.out.println("You set the potion down. Out of of the bottle comes a demon from hell.");
     	    	System.out.println("It looks to be a horrible mutant made of all the monsters you've slain.");
     	    	Monster demon = new Monster("Demon", 6, 5, 3);
-    	    	sortie monster = new sortie(hero, demon);
+    	    	BattleSys monster = new BattleSys(hero, demon);
     	    	objDungeon.heroSummary();
     	    	demon.Summary();
     	    }    
@@ -88,11 +88,11 @@ public class WizardScene {
     	    	Monster wizard = new Monster("Wizard", 10, 8, 100);
     	    	objDungeon.heroSummary();
     	    	wizard.Summary();
-    	    	sortie srt = new sortie(hero, wizard);
+    	    	BattleSys srt = new BattleSys(hero, wizard);
     	    	if (wizard.getHitPoints() <=0)
     	    	{
     	    		hero.setGold(hero.getGold()+100);
-        	    	hero.setKey(hero.getKey()+1);//Key is a plot key 
+        	    	hero.setKey(hero.getKey()+1);//This key is a plot key 
         	    	System.out.println("\n\nYou find a key!");
     	    	}
     	    	

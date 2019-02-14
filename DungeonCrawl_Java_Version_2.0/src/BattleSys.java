@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 //|
 //|  The fight continues until one contestant is dead or
 //|  the hero runs away.
-public class sortie
+public class BattleSys
 {
     //char[] buffer = new char[132];
     Random random = new Random();
@@ -27,7 +27,7 @@ public static void printWithDelays(String data, TimeUnit unit, long delay) throw
   }
 
   
-    public sortie(Hero hero, Monster monster) throws IOException, InterruptedException
+    public BattleSys(Hero hero, Monster monster) throws IOException, InterruptedException
     {
         int monsterThrow = random.nextInt(monster.getStrength());
         int heroThrow;

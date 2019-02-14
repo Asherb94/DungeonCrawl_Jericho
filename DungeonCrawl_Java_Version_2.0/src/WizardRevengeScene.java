@@ -11,7 +11,7 @@ public class WizardRevengeScene {//Revenge
 		Monster wizBro = new Monster("Old Wizard", 7, 6, 0);
 		objDungeon.heroSummary();
 		wizBro.Summary();
-		sortie srt = new sortie(hero, wizBro);
+		BattleSys srt = new BattleSys(hero, wizBro);
 		System.out.println("You stand over the old wizard's body. He looks peaceful next to his brother.");
 		System.out.println("Do you bury them? (y or n)");
 		

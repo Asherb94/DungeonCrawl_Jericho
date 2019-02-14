@@ -47,7 +47,7 @@ public class Scene04 {
 			System.out.println("\nOh no! You have angered the Great Pumpkin!!\n");
 			Monster monster = new Monster("Great Pumpkin", monsterHit, monsterStr, 0);
 			monster.Summary();
-			sortie sortie = new sortie(hero, monster);
+			BattleSys sortie = new BattleSys(hero, monster);
 		}
 	}
 	

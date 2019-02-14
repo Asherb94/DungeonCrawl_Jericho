@@ -22,7 +22,7 @@ public class OldManScene {
 				System.out.println("Old Man: Well then... I guess we will have to fight.");
 				System.out.println("The old man suddenly pulls out his wand!");
 				Monster monster = new Monster("Old Man", monsterHit, monsterStr, 10);
-				sortie sortie = new sortie(hero, monster);
+				BattleSys sortie = new BattleSys(hero, monster);
 			}
 			else
 			{
@@ -39,7 +39,7 @@ public class OldManScene {
 					Monster monster = new Monster("Old Man", monsterHit, monsterStr, 10);
 					objDungeon.heroSummary();
 					monster.Summary();
-					sortie sortie = new sortie(hero, monster);
+					BattleSys sortie = new BattleSys(hero, monster);
 				}
 			}
 				

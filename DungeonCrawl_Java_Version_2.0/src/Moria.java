@@ -17,7 +17,7 @@ public class Moria {
 		
 		int strength = hero.getStrength();	// will be used to determine if they won the fight
 		
-		sortie srtie = new sortie(hero, orc);
+		BattleSys srtie = new BattleSys(hero, orc);
 		
 		//TODO fix sortie method
 		// if the hero won the fight (they gain strength if they do)
@@ -40,7 +40,7 @@ public class Moria {
     	Monster balrog = new Monster("balrog", 20, 13, 0);
     	objDungeon.heroSummary();
     	balrog.Summary();
-		sortie sort = new sortie(hero, balrog);
+    	BattleSys sort = new BattleSys(hero, balrog);
 		
 		System.out.println("You manage to climb up from the chasm and finally get to the door.");
 		System.out.println("Meadows of flowers stretch before you. The sun shines bright and warm. You have survived.");

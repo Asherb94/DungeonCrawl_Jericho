@@ -21,7 +21,7 @@ public class GoldElfScene {
 			System.out.println();
 			objDungeon.heroSummary();
 			monster.Summary();
-			sortie sortie = new sortie(hero, monster);
+			BattleSys sortie = new BattleSys(hero, monster);
 			
 			if(hero.getHitPoints() > 0 && monster.getHitPoints() < 1){
 				printWithDelays("The golden human falls to the floor and turns into a golden puddle.",TimeUnit.MILLISECONDS, 75);
@@ -51,7 +51,7 @@ public class GoldElfScene {
 				Monster monster2 = new Monster("Golden Elf", monsterHit+4, monsterStr-2, 0);
 				objDungeon.heroSummary();
 				monster2.Summary();
-				sortie sortie2 = new sortie(hero, monster2);
+				BattleSys sortie2 = new BattleSys(hero, monster2);
 				
 				if(hero.getHitPoints() > 0 && monster.getHitPoints() < 1){
 					System.out.println("The golden elf falls to the floor and turns into a large golden key.");

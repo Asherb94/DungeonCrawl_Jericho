@@ -48,7 +48,7 @@ public class PumpkinScene {
 			Monster monster = new Monster("Great Pumpkin", monsterHit, monsterStr, 0);
 			objDungeon.heroSummary();
 			monster.Summary();
-			sortie sortie = new sortie(hero, monster);
+			BattleSys sortie = new BattleSys(hero, monster);
 		}
 	}
 	
