@@ -1,5 +1,3 @@
-
-
 import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
@@ -51,7 +49,7 @@ public class BatScene {
 		 }
 	}
 	
-	public static void main(String args[]) throws IOException, InterruptedException{
+/*	public static void main(String args[]) throws IOException, InterruptedException{
 		BatScene sc = new BatScene(0, 0);
-	}
+	}*/
 }

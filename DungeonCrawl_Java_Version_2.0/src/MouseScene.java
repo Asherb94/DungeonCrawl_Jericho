@@ -15,7 +15,7 @@ public class MouseScene {
 		System.out.println("What is THAT??\n.\n.\n.\n.\n");
 		System.out.println("A mouse!");
 
-		Monster monster = new Monster("Mouse", monsterHit, monsterStr, 0);
+		Monster monster = new Monster("Mouse", monsterHit, monsterStr, 1);
 		objDungeon.heroSummary();
 		monster.Summary();
 		

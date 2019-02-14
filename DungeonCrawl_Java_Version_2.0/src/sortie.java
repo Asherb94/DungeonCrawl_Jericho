@@ -149,6 +149,7 @@ public static void printWithDelays(String data, TimeUnit unit, long delay) throw
             {
                 System.out.print("\tThe " + monster.getName() + " drops dead.\n\n");
                 bothAlive = 0;
+                hero.setGold(hero.getGold() + monster.getGold());//get monster gold after it dies 
             }
             obj.heroSummary();//obj is the call to hero class 
             monster.Summary();
@@ -197,7 +198,7 @@ public static void printWithDelays(String data, TimeUnit unit, long delay) throw
             
             hero.setMaxStrength(hero.getMaxStrength()+1);
             hero.setStrength(hero.getStrength()+1);
-           //TO DO spaze up when gaining strenght and health
+           
             obj.heroSummary();
             System.out.print("\n");
         }
