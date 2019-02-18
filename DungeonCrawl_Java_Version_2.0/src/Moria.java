@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 public class Moria {
 	Hero hero;
@@ -37,7 +38,7 @@ public class Moria {
 	} // end orc
 	
 	private void balrogSortie() throws IOException, InterruptedException{
-    	Monster balrog = new Monster("balrog", 20, 13, 0);
+    	Monster balrog = new Monster("balrog", 20, 15, 0);
     	objDungeon.heroSummary();
     	balrog.Summary();
     	BattleSys sort = new BattleSys(hero, balrog);
@@ -48,16 +49,27 @@ public class Moria {
 
 	}
 	
+	 public static void printWithDelays(String data, TimeUnit unit, long delay) throws InterruptedException 
+	   {
+		    
+		  for (char ch:data.toCharArray()) 
+		    {
+		        System.out.print(ch);
+		        unit.sleep(delay);
+		    }
+	   }
+	
 	private void balrog() throws IOException, InterruptedException{
-		System.out.println("The door slowly swings open to reveal an enormous room. It seems to be the remains of a working mine.");
-		System.out.println("Everything is covered in dust now. You explore until you come to a bridge across a dark chasm.");
-		System.out.println("Across the bridge, there's a door that looks like it leads to the way out! Finally!!");
-		System.out.println("\nYou start to run along the bridge, when suddenly...");
-		System.out.println("\n\n\tROOOOOAAAAARRRR!!!!!!!!!!");
+		printWithDelays("....What if I told you that you were in the fight for your life. \n",TimeUnit.MILLISECONDS, 70);
+		printWithDelays("The door slowly swings open to reveal an enormous room. It seems to be the remains of a working mine. \n",TimeUnit.MILLISECONDS, 70);
+		printWithDelays("Everything is covered in dust now. You explore until you come to a bridge across a dark chasm. \n",TimeUnit.MILLISECONDS, 70);
+		printWithDelays("Across the bridge, there's a door that looks like it leads to the way out! Finally!! \n",TimeUnit.MILLISECONDS, 70);
+		printWithDelays("\nYou start to run along the bridge, when suddenly...\n",TimeUnit.MILLISECONDS, 70);
+		printWithDelays("\n\n\tROOOOOAAAAARRRR!!!!!!!!!! \n",TimeUnit.MILLISECONDS, 70);
 		
-		System.out.println("\n\nA huge, fiery beast with a human-like skull and horns is below you. A BALROG!");
-		System.out.println("It cracks its flaming whip towards you, nearly grabbing you! Quick, what do you do?!");
-		System.out.println("(A) RUN! \n(B) FIGHT!");
+		printWithDelays("\n\nA huge, fiery beast with a human-like skull and horns is below you. A BALROG! \n",TimeUnit.MILLISECONDS, 70);
+		printWithDelays("It cracks its flaming whip towards you, nearly grabbing you! Quick, what do you do?! \n",TimeUnit.MILLISECONDS, 70);
+		printWithDelays("(A) RUN! \n(B) FIGHT! \n",TimeUnit.MILLISECONDS, 70);
 		
     	String ans = input.readLine();    	
     	int toss = 0;
