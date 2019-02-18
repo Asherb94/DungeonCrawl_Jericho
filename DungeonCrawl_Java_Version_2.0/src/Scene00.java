@@ -15,6 +15,8 @@ public class Scene00 {
 		System.out.println("It makes a pleasant clink in your bag of treasure.");
 		System.out.println("\nYou continue walking into the mine.");
 		System.out.println("Everything is fine, so far.");
+		
+		hero.Summary();
 	}
 
 }

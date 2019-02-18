@@ -42,8 +42,8 @@ public class Moria {
     	balrog.Summary();
     	BattleSys sort = new BattleSys(hero, balrog);
 		
-		System.out.println("You manage to climb up from the chasm and finally get to the door.");
-		System.out.println("Meadows of flowers stretch before you. The sun shines bright and warm. You have survived.");
+		//System.out.println("You manage to climb up from the chasm and finally get to the door.");
+		//System.out.println("Meadows of flowers stretch before you. The sun shines bright and warm. You have survived.");
 
 
 	}

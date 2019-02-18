@@ -16,7 +16,7 @@ public class Intro {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("\n\n");
 		System.out.print("  You approach DUNGEON JERICHO, ");
-		System.out.print("  rummored to be filled with the treasures of men of long ago, \n");
+		System.out.print("  rummored to be filled with the treasures of men from long ago, \n");
 		System.out.print("  but guarded by ");
 		System.out.print("monsters dangerous and most foul.\n\n");
 		System.out.print("   None but the brave dare enter.\n\n");
