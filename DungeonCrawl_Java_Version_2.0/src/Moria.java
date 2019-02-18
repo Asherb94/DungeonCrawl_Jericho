@@ -38,8 +38,8 @@ public class Moria {
 	} // end orc
 	
 	private void balrogSortie() throws IOException, InterruptedException{
-    	Monster balrog = new Monster("balrog", 20, 15, 0);
-    	objDungeon.heroSummary();
+    	Monster balrog = new Monster("balrog", 20, 13, 0);
+    	hero.heroSummary();
     	balrog.Summary();
     	BattleSys sort = new BattleSys(hero, balrog);
 		
@@ -60,7 +60,6 @@ public class Moria {
 	   }
 	
 	public void balrog() throws IOException, InterruptedException{
-		printWithDelays("....What if I told you that you were in the fight for your life. \n",TimeUnit.MILLISECONDS, 70);
 		printWithDelays("The door slowly swings open to reveal an enormous room. It seems to be the remains of a working mine. \n",TimeUnit.MILLISECONDS, 70);
 		printWithDelays("Everything is covered in dust now. You explore until you come to a bridge across a dark chasm. \n",TimeUnit.MILLISECONDS, 70);
 		printWithDelays("Across the bridge, there's a door that looks like it leads to the way out! Finally!! \n",TimeUnit.MILLISECONDS, 70);
@@ -137,7 +136,7 @@ public class Moria {
     			orc();	  		    		
     	} // end investigate 
 		
-    	objDungeon.heroSummary();		
+    	hero.heroSummary();		
 	} // end moria
 
 	public static void main(String[] args) throws IOException, InterruptedException {

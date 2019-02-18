@@ -45,7 +45,7 @@ public class Intro {
 		    	{
 			    	System.out.println("  Enter your name, Hero: ");
 			    	String objName = input.readLine();
-			    	Hero objHero = new Hero(objName,4,4,0,0);
+			    	objHero = new Hero(objName,4,4,0,0);
 			    	
 			    	if (objHero.getName().isEmpty() || objHero.getName().length() < test.length() )//test is 4 
 			    	{
@@ -58,7 +58,7 @@ public class Intro {
 			    		System.out.println("\n Now *thats* a Heroic name\n");
 			    		flagSub = 0;//this will stop the loop 
 			    		flag = 0;
-			    		
+			    		objHero.Summary();
 			    	}    		
 		        }
 		    	        

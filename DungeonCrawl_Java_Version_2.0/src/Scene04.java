@@ -54,7 +54,7 @@ public class Scene04 {
 	private static void rightChoice(){
 		System.out.println("You find 10 gold pieces.");
 		hero.setGold(hero.getGold()+10);
-		objDungeon.heroSummary();
+		hero.heroSummary();
 	}
 	
 	public static void main(String[] args) throws IOException, InterruptedException{

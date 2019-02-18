@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class BatScene {
 	//TODO need external hero
-	 static Hero hero;
+	 public static Hero hero;
 	 DungeonCrawl objDungeon = new DungeonCrawl();
 	
 	public BatScene(int monsterHit, int monsterStr) throws IOException, InterruptedException{
 		System.out.println("\nWhat is that fluttering sound?");
 		System.out.println("OH NO! It's a saber-tooth bat!");
 		Monster monster = new Monster("Bat", monsterHit, monsterStr, 1);
-		objDungeon.heroSummary();
+		hero.heroSummary();
 		monster.Summary();
 		
 		BattleSys objBattle = new BattleSys(hero, monster);//call to BattleSys

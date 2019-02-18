@@ -49,7 +49,7 @@ public class WizardScene {
     	    	System.out.println("It looks to be a horrible mutant made of all the monsters you've slain.");
     	    	Monster demon = new Monster("Demon", 6, 5, 3);
     	    	BattleSys monster = new BattleSys(hero, demon);
-    	    	objDungeon.heroSummary();
+    	    	hero.heroSummary();
     	    	demon.Summary();
     	    }    
         }
@@ -86,7 +86,7 @@ public class WizardScene {
     	    }
     	    else {
     	    	Monster wizard = new Monster("Wizard", 10, 8, 100);
-    	    	objDungeon.heroSummary();
+    	    	hero.heroSummary();
     	    	wizard.Summary();
     	    	BattleSys srt = new BattleSys(hero, wizard);
     	    	if (wizard.getHitPoints() <=0)

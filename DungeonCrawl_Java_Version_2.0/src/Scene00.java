@@ -1,7 +1,7 @@
 public class Scene00 {
 
 	
-	public static Hero hero;
+	public Hero hero;
 
 
 
@@ -16,7 +16,8 @@ public class Scene00 {
 		System.out.println("\nYou continue walking into the mine.");
 		System.out.println("Everything is fine, so far.");
 		
-		hero.Summary();
+		hero.heroSummary();
+		
 	}
 
 }

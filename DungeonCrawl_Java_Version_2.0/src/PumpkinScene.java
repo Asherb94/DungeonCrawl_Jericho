@@ -46,7 +46,7 @@ public class PumpkinScene {
 		else {
 			System.out.println("\nOh no! You have angered the Great Pumpkin!!\n");
 			Monster monster = new Monster("Great Pumpkin", monsterHit, monsterStr, 0);
-			objDungeon.heroSummary();
+			hero.heroSummary();
 			monster.Summary();
 			BattleSys sortie = new BattleSys(hero, monster);
 		}
@@ -55,7 +55,7 @@ public class PumpkinScene {
 	private static void rightChoice(){
 		System.out.println("You find 10 gold pieces.");
 		hero.setGold(hero.getGold()+10);
-		objDungeon.heroSummary();
+		hero.heroSummary();
 	}
 	
 	public static void main(String[] args) throws IOException, InterruptedException{

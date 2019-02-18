@@ -2,7 +2,6 @@ import java.io.IOException;
 
 public abstract class Scenes 
 {
-	Hero hero;
 	static void scene00( ) 
 	{
 		Scene00 objScene00 = new Scene00();

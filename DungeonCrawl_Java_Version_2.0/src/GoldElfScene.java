@@ -19,7 +19,7 @@ public class GoldElfScene {
 			
 			Monster monster = new Monster("Golden Human Thing", monsterHit, monsterStr, 0);
 			System.out.println();
-			objDungeon.heroSummary();
+			hero.heroSummary();
 			monster.Summary();
 			BattleSys sortie = new BattleSys(hero, monster);
 			
@@ -49,7 +49,7 @@ public class GoldElfScene {
 				}
 				
 				Monster monster2 = new Monster("Golden Elf", monsterHit+4, monsterStr-2, 0);
-				objDungeon.heroSummary();
+				hero.heroSummary();
 				monster2.Summary();
 				BattleSys sortie2 = new BattleSys(hero, monster2);
 				

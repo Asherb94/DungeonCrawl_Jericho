@@ -13,6 +13,7 @@ public class BattleSys
 {
     //char[] buffer = new char[132];
     Random random = new Random();
+    public static Hero hero;
     DungeonCrawl obj = new DungeonCrawl();
     
     Scanner scan = new Scanner(System. in );
@@ -151,7 +152,7 @@ public static void printWithDelays(String data, TimeUnit unit, long delay) throw
                 bothAlive = 0;
                 hero.setGold(hero.getGold() + monster.getGold());//get monster gold after it dies 
             }
-            obj.heroSummary();//obj is the call to hero class 
+            hero.heroSummary();//obj is the call to DungeonCrawl class  
             monster.Summary();
             
             if (monster.getName().equals("belrog"))//the belrog wont run away ***
@@ -174,7 +175,7 @@ public static void printWithDelays(String data, TimeUnit unit, long delay) throw
 				{
 					System.out.println("\nYou caught up with " + monster.getName() + "!");
 					System.out.println("\nThe fight continues!\n");
-					obj.heroSummary();
+					hero.heroSummary();
 					monster.Summary();
 					
 				}
@@ -199,7 +200,7 @@ public static void printWithDelays(String data, TimeUnit unit, long delay) throw
             hero.setMaxStrength(hero.getMaxStrength()+1);
             hero.setStrength(hero.getStrength()+1);
            
-            obj.heroSummary();
+            hero.heroSummary();
             System.out.print("\n");
         }
         
@@ -207,7 +208,7 @@ public static void printWithDelays(String data, TimeUnit unit, long delay) throw
         {
             System.out.print("\n\n\tYou run away from the battle....coward\n");
            
-            obj.heroSummary();
+            hero.heroSummary();
             System.out.print("\n");
         }
         

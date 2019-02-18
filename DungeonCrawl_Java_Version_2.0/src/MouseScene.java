@@ -16,7 +16,7 @@ public class MouseScene {
 		System.out.println("A mouse!");
 
 		Monster monster = new Monster("Mouse", monsterHit, monsterStr, 1);
-		objDungeon.heroSummary();
+		hero.heroSummary();
 		monster.Summary();
 		
 		

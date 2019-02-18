@@ -33,7 +33,7 @@ public class BoulderScene {
 				if (ans.equals("y") || ans.equals("Y")){
 					System.out.println("You open the chest and a skeleton hand reaches for you!");
 					Monster monster = new Monster("Skeleton Hand", 10, 3, 0);
-					objDungeon.heroSummary();
+					hero.heroSummary();
 					monster.Summary();
 					BattleSys objBattle = new BattleSys(hero, monster);
 					if(hero.getHitPoints()> 0){

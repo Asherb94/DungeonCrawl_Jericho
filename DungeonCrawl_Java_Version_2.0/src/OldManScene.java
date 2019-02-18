@@ -37,7 +37,7 @@ public class OldManScene {
 					System.out.println("I'm sorry but that is not correct.");
 					System.out.println("The old man suddenly pulls out his wand!");
 					Monster monster = new Monster("Old Man", monsterHit, monsterStr, 10);
-					objDungeon.heroSummary();
+					hero.heroSummary();
 					monster.Summary();
 					BattleSys sortie = new BattleSys(hero, monster);
 				}

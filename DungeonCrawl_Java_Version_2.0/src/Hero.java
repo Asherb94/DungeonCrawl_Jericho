@@ -1,13 +1,13 @@
 public class Hero {
-	  private static  int hitPoints;
-	  private static int maxHitPoints;
-	  private static int strength;
-	  private static int maxStrength;
-	  private static int potions;
-	  private static int gold;
-	  private static int intelligence;
-	  private static String name;
-	  private static int key;
+	  public static int hitPoints;
+	  public static int maxHitPoints;
+	  public static int strength;
+	  public static int maxStrength;
+	  public static int potions;
+	  public static int gold;
+	  public static int intelligence;
+	  public static String name;
+	  public static int key;
 	  
 	  public Hero(String name, int hitPoints, int strength, int gold, int key){
 		  this.name = name;
@@ -25,8 +25,15 @@ public class Hero {
 	public void Summary(){
 		  System.out.println("Hero " + name +": " + Hero.hitPoints + "/" 
 				  + this.maxHitPoints + "HP; " + this.strength + "/" + this.maxStrength 
-				  + " ST; " + this.gold + " Gold " + "Key(s): "+ Hero.getKey());
+				  + " ST; " + this.gold + " Gold " + "Key(s): "+ this.key);
 	  }
+	
+	public static void heroSummary()
+	{
+		System.out.println((Hero.getName() +": " + Hero.getHitPoints() + "/" 
+				  + Hero.getMaxHitPoints() + "HP; " + Hero.getStrength() + "/" + Hero.getMaxStrength() 
+				  + " ST; " + Hero.getGold() + " Gold   " + "Key(s) " + Hero.getKey() ));
+	}
 
 	public static int getHitPoints() {
 		return hitPoints;

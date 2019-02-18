@@ -9,7 +9,7 @@ public class WizardRevengeScene {//Revenge
 	
 	private void fight() throws IOException, InterruptedException{
 		Monster wizBro = new Monster("Old Wizard", 7, 6, 0);
-		objDungeon.heroSummary();
+		hero.heroSummary();
 		wizBro.Summary();
 		BattleSys srt = new BattleSys(hero, wizBro);
 		System.out.println("You stand over the old wizard's body. He looks peaceful next to his brother.");
@@ -68,7 +68,7 @@ public class WizardRevengeScene {//Revenge
     		fight();
     	}
 		
-    	objDungeon.heroSummary();;
+    	hero.heroSummary();;
 		
 	} // end main scene
 

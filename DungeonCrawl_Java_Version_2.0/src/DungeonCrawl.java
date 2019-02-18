@@ -1,5 +1,5 @@
 /*
- * @authos: Asher, Logan, & Lydia 
+ * @author: Asher, Logan, & Lydia 
  * Last Worked on: 12/3/2017
  */
 import java.io.IOException;
@@ -7,7 +7,6 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class DungeonCrawl extends Scenes{
-    static Hero hero; //The hero object    -- constantly updated by the game
     Monster monster; //The monster object -- constantly updated by the game
 	
 	private int hitPoints;
@@ -16,25 +15,19 @@ public class DungeonCrawl extends Scenes{
 	private int gold;
 	
 	
-	public static void heroSummary()
+	/*public static void heroSummary()
 	{
 		System.out.println((Hero.getName() +": " + Hero.getHitPoints() + "/" 
 				  + Hero.getMaxHitPoints() + "HP; " + Hero.getStrength() + "/" + Hero.getMaxStrength() 
 				  + " ST; " + Hero.getGold() + " Gold   " + "Key(s) " + Hero.getKey() ));
 		
 		
-	}
+	}*/
 	
 	public void monsterSummary()
 	{
 		System.out.println("     Monster: " + Monster.getHitPoints() + Monster.getMaxHitPoints() 
 													+ Monster.getStrength() + Monster.getMaxStrength());
-	}
-	
-	public void summary()
-	{
-	  hero.Summary();
-	  monster.Summary();
 	}
 	
 	public static void pauseProg(){
@@ -109,11 +102,10 @@ public class DungeonCrawl extends Scenes{
 		if (scan.hasNextLine()){
 		}
 	
-		Intro obj = new Intro();//where hero is created the frist time..name,health,strength,gold
-		obj.intro();
-		heroSummary();
+		Intro objIntro = new Intro();//where hero is created the frist time..name,health,strength,gold
+		objIntro.intro();
 		//only runs once ^
-		//loops after that below (down arrow)
+		//loops after that below
 		while (Hero.getHitPoints() > 0 && scene <= 10)//MAKE SURE TO UPDATE WHILE SCENES ARE BEING ADDED
 		{
 			
