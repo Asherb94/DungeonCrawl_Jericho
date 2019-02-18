@@ -10,7 +10,7 @@ public class Moria {
 	Random random = new Random();
 	DungeonCrawl objDungeon = new DungeonCrawl();
 	
-	private void orc() throws IOException, InterruptedException{
+	public void orc() throws IOException, InterruptedException{
 		System.out.println("You head back the way you came. Strangely, you don't remember walking so long to get back...");
 		System.out.println("\nYou round a corner to find an orc with a huge, spiked club in hand. He runs toward you.");
 		
@@ -49,7 +49,7 @@ public class Moria {
 
 	}
 	
-	 public static void printWithDelays(String data, TimeUnit unit, long delay) throws InterruptedException 
+	 private static void printWithDelays(String data, TimeUnit unit, long delay) throws InterruptedException 
 	   {
 		    
 		  for (char ch:data.toCharArray()) 
@@ -59,7 +59,7 @@ public class Moria {
 		    }
 	   }
 	
-	private void balrog() throws IOException, InterruptedException{
+	public void balrog() throws IOException, InterruptedException{
 		printWithDelays("....What if I told you that you were in the fight for your life. \n",TimeUnit.MILLISECONDS, 70);
 		printWithDelays("The door slowly swings open to reveal an enormous room. It seems to be the remains of a working mine. \n",TimeUnit.MILLISECONDS, 70);
 		printWithDelays("Everything is covered in dust now. You explore until you come to a bridge across a dark chasm. \n",TimeUnit.MILLISECONDS, 70);

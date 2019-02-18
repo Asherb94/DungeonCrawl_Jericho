@@ -27,8 +27,8 @@ public class DungeonCrawl extends Scenes{
 	
 	public void monsterSummary()
 	{
-		System.out.println("     Monster: " + monster.getHitPoints() + monster.getMaxHitPoints() 
-													+ monster.getStrength() + monster.getMaxStrength());
+		System.out.println("     Monster: " + Monster.getHitPoints() + Monster.getMaxHitPoints() 
+													+ Monster.getStrength() + Monster.getMaxStrength());
 	}
 	
 	public void summary()
@@ -77,7 +77,7 @@ public class DungeonCrawl extends Scenes{
 	  }
 	  
 	  public static void deathCall (){
-		  if ( hero.getHitPoints() <= 0 )
+		  if ( Hero.getHitPoints() <= 0 )
 		  {
 		    System.out.print("\n\nYou Lose.\n");
 		    RIP objRIP = new RIP();
@@ -102,7 +102,7 @@ public class DungeonCrawl extends Scenes{
 		
 		//Splash Screen aka Title screen
 		Splash objSplash = new Splash();//create obj splash
-		objSplash.splash();//calls constructor and displays title 
+		Splash.splash();//calls constructor and displays title 
 	    
 		
 		System.out.println("\n\n      (Hit Enter)");
@@ -114,7 +114,7 @@ public class DungeonCrawl extends Scenes{
 		heroSummary();
 		//only runs once ^
 		//loops after that below (down arrow)
-		while (hero.getHitPoints() > 0 && scene <= 10)//MAKE SURE TO UPDATE WHILE SCENES ARE BEING ADDED
+		while (Hero.getHitPoints() > 0 && scene <= 10)//MAKE SURE TO UPDATE WHILE SCENES ARE BEING ADDED
 		{
 			
 			pauseProg();	
@@ -131,10 +131,10 @@ public class DungeonCrawl extends Scenes{
 			
 			
 			 /* If hit points are low, place a magic potion in the Hero's path */
-			  if (  hero.getHitPoints() > 0 && hero.getHitPoints() < scene/4 +2   ) //
+			  if (  Hero.getHitPoints() > 0 && Hero.getHitPoints() < scene/4 +2   ) //
 			  {
 				  PotionScene objPotion = new PotionScene();
-				  objPotion.potionScene();
+				  PotionScene.potionScene();
 			  }
 			  
 			  /* End of Game Summary */
@@ -146,11 +146,11 @@ public class DungeonCrawl extends Scenes{
 			    objRIP.display();
 			  }*/
 			  
-			  if(scene == 11 && hero.getHitPoints()>=1)//MAKE SURE TO UPDATE WHILE SCENES ARE BEING ADDED 
+			  if(scene == 11 && Hero.getHitPoints()>=1)//MAKE SURE TO UPDATE WHILE SCENES ARE BEING ADDED 
 			  {
 				int finalGold = 0;
 			    System.out.print("\n\n  You reach the end of the mine and find 100 pieces of gold\n\n");
-			    finalGold = hero.getGold() + 100;
+			    finalGold = Hero.getGold() + 100;
 			    System.out.print("  You now have " + finalGold + " pieces of gold and have WON the game.\n\n");
 
 			  }
