@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 
 public class PumpkinScene {
 	  //TODO global hero object
-    static DungeonCrawl objDungeon = new DungeonCrawl();
+    //static DungeonCrawl objDungeon = new DungeonCrawl();
 	static Hero hero;
 	int monsterHit;
 	int monsterStr;
@@ -45,7 +45,7 @@ public class PumpkinScene {
 		}
 		else {
 			System.out.println("\nOh no! You have angered the Great Pumpkin!!\n");
-			Monster monster = new Monster("Great Pumpkin", monsterHit, monsterStr, 0);
+			Monster monster = new Monster("Great Pumpkin", monsterHit, monsterStr, 10);
 			hero.heroSummary();
 			monster.Summary();
 			BattleSys sortie = new BattleSys(hero, monster);
@@ -58,7 +58,7 @@ public class PumpkinScene {
 		hero.heroSummary();
 	}
 	
-	public static void main(String[] args) throws IOException, InterruptedException{
+/*	public static void main(String[] args) throws IOException, InterruptedException{
 		PumpkinScene sc = new PumpkinScene(5, 4);
-	}
+	}*/
 }

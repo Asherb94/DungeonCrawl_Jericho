@@ -14,16 +14,6 @@ public class DungeonCrawl extends Scenes{
 	private String name;
 	private int gold;
 	
-	
-	/*public static void heroSummary()
-	{
-		System.out.println((Hero.getName() +": " + Hero.getHitPoints() + "/" 
-				  + Hero.getMaxHitPoints() + "HP; " + Hero.getStrength() + "/" + Hero.getMaxStrength() 
-				  + " ST; " + Hero.getGold() + " Gold   " + "Key(s) " + Hero.getKey() ));
-		
-		
-	}*/
-	
 	public void monsterSummary()
 	{
 		System.out.println("     Monster: " + Monster.getHitPoints() + Monster.getMaxHitPoints() 
@@ -41,8 +31,8 @@ public class DungeonCrawl extends Scenes{
 	{
      //Final Monster Health and Strength 
 	  if      ( scene== 0 ) scene00();//1 gold   /* monster-hitpoints, monster-strength  */
-	  else if ( scene== 1 )  {BatScene( 1, 1); deathCall();BatScene( 3, 2);} // Bat 2 2
-	  else if ( scene== 2 ) PumpkinScene( 4, 4);//Bat 3 3
+	  else if ( scene== 1 )  {BatScene( 1, 1);BatScene( 3, 2);} //deathCall(); // Bat 2 2
+	  else if ( scene== 2 ) PumpkinScene( 4, 4);//Bat 3 3 
 	  else if ( scene== 3 ) SmallChestScene( 0, 0);// chest 
 	  else if ( scene== 4 ) MouseScene( 4, 4);// Mouse 
 	  else if ( scene== 5 ) WizardScene( 1, 1);// The Wizard, only exception to rule because of mult monsters in class 

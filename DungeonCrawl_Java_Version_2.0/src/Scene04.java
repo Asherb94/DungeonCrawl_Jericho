@@ -5,7 +5,6 @@ import java.io.InputStreamReader;
 
 public class Scene04 {
 	  //TODO global hero object
-    static DungeonCrawl objDungeon = new DungeonCrawl();
 	static Hero hero;
 	int monsterHit;
 	int monsterStr;
@@ -57,7 +56,7 @@ public class Scene04 {
 		hero.heroSummary();
 	}
 	
-	public static void main(String[] args) throws IOException, InterruptedException{
+/*	public static void main(String[] args) throws IOException, InterruptedException{
 		Scene04 sc = new Scene04(5, 4);
-	}
+	}*/
 }
