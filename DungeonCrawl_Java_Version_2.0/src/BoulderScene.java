@@ -66,9 +66,9 @@ public class BoulderScene {
 			}
 		}
 		
-		public static void main(String[] args) throws IOException, InterruptedException{
+/*		public static void main(String[] args) throws IOException, InterruptedException{
 			BoulderScene sc = new BoulderScene(0,0);
-			//goAround();
+			//goAround();*/
 		}
 	
 }
