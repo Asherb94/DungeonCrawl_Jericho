@@ -6,7 +6,7 @@ import java.util.Random;
 public class BoulderScene {
 	//TODO global hero object
 		static Hero hero;
-		DungeonCrawl objDungeon = new DungeonCrawl();
+		//DungeonCrawl objDungeon = new DungeonCrawl();
 		
 		// start //
 		public BoulderScene(int monsterHit, int monsterStr) throws IOException, InterruptedException{
@@ -68,7 +68,7 @@ public class BoulderScene {
 		
 /*		public static void main(String[] args) throws IOException, InterruptedException{
 			BoulderScene sc = new BoulderScene(0,0);
-			//goAround();*/
-		}
+			//goAround();
+		}*/
 	
 }
