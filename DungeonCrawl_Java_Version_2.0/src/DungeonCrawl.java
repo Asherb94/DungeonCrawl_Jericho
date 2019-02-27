@@ -33,14 +33,15 @@ public class DungeonCrawl extends Scenes{
 	  if      ( scene== 0 ) scene00();//1 gold   /* monster-hitpoints, monster-strength  */
 	  else if ( scene== 1 )  {BatScene( 1, 1);BatScene( 3, 2);} //deathCall(); // Bat 2 2
 	  else if ( scene== 2 ) PumpkinScene( 4, 4);//Bat 3 3 
-	  else if ( scene== 3 ) SmallChestScene( 0, 0);// chest 
-	  else if ( scene== 4 ) MouseScene( 4, 4);// Mouse 
-	  else if ( scene== 5 ) WizardScene( 1, 1);// The Wizard, only exception to rule because of mult monsters in class 
-	  else if ( scene== 6 ) BoulderScene( 0, 0); // BoulderScene, makes monster in class 
-	  else if ( scene== 7 ) GoldElfScene( 7, 7); // 
-	  else if ( scene== 8 ) OldManScene( 7, 10);// Old Man (fight) 
-	  else if ( scene== 9 ) WizardRevengeScene( 4, 4);// Revenge (fight) only exception to rule because of mult monsters in class- 4 and 4 for mouse 
-	  else if ( scene== 10 ) Moria( );//Monsters in the class 
+	  else if ( scene== 3 ) PumpkinScene( 4, 4);//Bat 3 3 
+	  else if ( scene== 4 ) SmallChestScene( 0, 0);// chest 
+	  else if ( scene== 5 ) MouseScene( 4, 4);// Mouse 
+	  else if ( scene== 6 ) WizardScene( 1, 1);// The Wizard, only exception to rule because of mult monsters in class 
+	  else if ( scene== 7 ) BoulderScene( 0, 0); // BoulderScene, makes monster in class 
+	  else if ( scene== 8 ) GoldElfScene( 7, 7); // 
+	  else if ( scene== 9 ) OldManScene( 7, 10);// Old Man (fight) 
+	  else if ( scene== 10 ) WizardRevengeScene( 4, 4);// Revenge (fight) only exception to rule because of mult monsters in class- 4 and 4 for mouse 
+	  else if ( scene== 11 ) Moria( );//Monsters in the class 
 
 	  else
 	  {
@@ -96,7 +97,7 @@ public class DungeonCrawl extends Scenes{
 		objIntro.intro();
 		//only runs once ^
 		//loops after that below
-		while (Hero.getHitPoints() > 0 && scene <= 10)//MAKE SURE TO UPDATE WHILE SCENES ARE BEING ADDED
+		while (Hero.getHitPoints() > 0 && scene <= 11)//MAKE SURE TO UPDATE WHILE SCENES ARE BEING ADDED
 		{
 			
 			pauseProg();	
