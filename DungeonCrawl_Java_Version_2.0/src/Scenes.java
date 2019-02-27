@@ -65,6 +65,11 @@ public abstract class Scenes
 			Moria objMoria = new Moria();
 			
 		}
+		
+		static void ItemShop() throws IOException, InterruptedException{
+			
+			ItemShop itemobj = new ItemShop();
+		}
 	
 
 	static void potionScene() {

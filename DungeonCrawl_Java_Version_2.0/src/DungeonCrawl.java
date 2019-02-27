@@ -33,7 +33,7 @@ public class DungeonCrawl extends Scenes{
 	  if      ( scene== 0 ) scene00();//1 gold   /* monster-hitpoints, monster-strength  */
 	  else if ( scene== 1 )  {BatScene( 1, 1);BatScene( 3, 2);} //deathCall(); // Bat 2 2
 	  else if ( scene== 2 ) PumpkinScene( 4, 4);//Bat 3 3 
-	  else if ( scene== 3 ) PumpkinScene( 4, 4);//Bat 3 3 
+	  else if ( scene== 3 ) ItemShop();
 	  else if ( scene== 4 ) SmallChestScene( 0, 0);// chest 
 	  else if ( scene== 5 ) MouseScene( 4, 4);// Mouse 
 	  else if ( scene== 6 ) WizardScene( 1, 1);// The Wizard, only exception to rule because of mult monsters in class 

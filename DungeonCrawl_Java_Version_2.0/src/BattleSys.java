@@ -167,7 +167,8 @@ public static void printWithDelays(String data, TimeUnit unit, long delay) throw
             	printWithDelays("\n\t\tThe ",TimeUnit.MILLISECONDS, 80);System.out.print(monster.getName());printWithDelays(" turns tail and runs away!\n\n",TimeUnit.MILLISECONDS, 80);
                 //System.out.print("\n\t\tThe " + monster.getName() + " turns tail and runs away!\n\n");
                 //System.out.print("\n\t\tQuick! Now's your chance to chase the " + monster.getName() +" and kill it\n\n");
-            	printWithDelays("\n\t\tQuick! Now's your chance to chase the ",TimeUnit.MILLISECONDS, 80);System.out.print(monster.getName());;printWithDelays(" and kill it\n\n",TimeUnit.MILLISECONDS, 80);
+            	printWithDelays("\n\t\tQuick! Now's your chance to chase the ",TimeUnit.MILLISECONDS, 80);
+            	System.out.print(monster.getName());;printWithDelays(" and kill it\n\n",TimeUnit.MILLISECONDS, 80);
             	printWithDelays("\n\nWhat do you do? [A]: Chase \t [B]: Don't Chase\n",TimeUnit.MILLISECONDS, 75);
 				String answerSub = inputSub.readLine();
 				
