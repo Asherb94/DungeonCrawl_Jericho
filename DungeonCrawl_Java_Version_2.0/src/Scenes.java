@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public abstract class Scenes 
 {
@@ -56,9 +57,10 @@ public abstract class Scenes
 			
 		}
 		
-		static void TravelScene()
+		static void TravelSceneOne() throws InterruptedException
 		{
-			System.out.println("As you continue to travel into the dungeon...");
+        	printWithDelays("\n\t\t As you continue to travel into the dungeon... ",TimeUnit.MILLISECONDS, 80);
+
 		}
 		
 		static void Moria(  ) throws IOException, InterruptedException {
@@ -70,9 +72,14 @@ public abstract class Scenes
 			
 			ItemShop itemobj = new ItemShop();
 		}
-	
-
-	static void potionScene() {
-	}
+		
+		public static void printWithDelays(String data, TimeUnit unit, long delay) throws InterruptedException {
+		    
+			  for (char ch:data.toCharArray()) 
+			    {
+			        System.out.print(ch);
+			        unit.sleep(delay);
+			    }
+		  }
 
 }
