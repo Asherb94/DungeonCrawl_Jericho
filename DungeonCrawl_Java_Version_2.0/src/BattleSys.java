@@ -5,9 +5,9 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-//|  A fight between the hero and a  monster
+//|  A fight between the hero and monster
 //|
-//|  The fight continues until one contestant is dead or
+//|  The fight continues until monster/user is dead or
 //|  the hero runs away.
 public class BattleSys
 {
