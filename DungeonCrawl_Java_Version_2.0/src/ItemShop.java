@@ -12,15 +12,17 @@ public class ItemShop {
 	public ItemShop() throws InterruptedException
 	{
 		printWithDelays("\n\t\tAs you continue through the mine, you notice an opening on the side of the wall.  ",TimeUnit.MILLISECONDS, 80);
-		printWithDelays("\n\t\tYou see a dim light at the end of the indent in the wall. You walk towards the dim light glow. ",TimeUnit.MILLISECONDS, 80);
+		printWithDelays("\n\t\tYou see a dim light at the end of the indent in the wall. You walk towards the dim lit glow. ",TimeUnit.MILLISECONDS, 80);
 		printWithDelays("\n\t\tIt’s a door. You open it and step inside.  ",TimeUnit.MILLISECONDS, 80);
-		System.out.print("\t  ===============ITEM SHOP================\n");
-	     System.out.print("\t ==== [A] sword $5 - ====)------------  ====\n");
-	     System.out.print("\t ==== [B] potion 8 -                 ====\n");
-	     System.out.print("\t ====                                ====\n");
-	     System.out.print("\t ====                                ====\n");
-	     System.out.print("\t ====                                ====\n");
-	     System.out.print("\t ========================================\n");
+		System.out.println();
+		System.out.println();
+		System.out.print("\t\t\t\t ================ITEM SHOP===============\n");
+	    System.out.print("\t\t\t\t ==== [A] Sword 5 gil    (+2 atk)    ====\n");
+	    System.out.print("\t\t\t\t ==== [B] H potion 8 gil (+2 hp)     ====\n");
+	    System.out.print("\t\t\t\t ==== [C] S potion 8 gil (+2 stm)    ====\n");
+	    System.out.print("\t\t\t\t ==== [D] X potion X gil             ====\n");
+	    System.out.print("\t\t\t\t ==== [E] Play Slot                  ====\n");
+	    System.out.print("\t\t\t\t ========================================\n");
 	}
 	
 	public static void printWithDelays(String data, TimeUnit unit, long delay) throws InterruptedException 
@@ -32,6 +34,12 @@ public class ItemShop {
 		        unit.sleep(delay);
 		    }
 	  }
+	
+	public static void main(String args[]) throws InterruptedException
+	{
+		ItemShop runitem = new ItemShop();
+		
+	}
 	
 	
 	
