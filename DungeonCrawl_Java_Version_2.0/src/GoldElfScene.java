@@ -40,7 +40,7 @@ public class GoldElfScene {
 						+ "As you watch, horrified, it turns into a golden elf which quickly shoots an arrow at you.\n");*/
 				if(hero.getMaxStrength() >= 8)
 				{
-					System.out.println("\n\n.....With your qick reflexes you are quick enough to dodge the attack!\n");
+					System.out.println("\n\n.....With your quick reflexes you are quick enough to dodge the attack!\n");
 				}
 				else
 				{

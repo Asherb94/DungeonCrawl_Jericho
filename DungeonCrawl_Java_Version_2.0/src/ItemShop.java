@@ -23,8 +23,24 @@ public class ItemShop {
 	    System.out.print("\t\t\t\t ==== [D] X potion X gil             ====\n");
 	    System.out.print("\t\t\t\t ==== [E] Play Slot                  ====\n");
 	    System.out.print("\t\t\t\t ========================================\n");
+	    
+	    //into to shop keeper
+	    System.out.println();
+		printWithDelays("\n\t\tAs you continue through the mine, you notice an opening on the side of the wall.  ",TimeUnit.MILLISECONDS, 80);
+
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
 	}
-	
+	//slow down text method 
 	public static void printWithDelays(String data, TimeUnit unit, long delay) throws InterruptedException 
 	{
 	    
@@ -34,7 +50,7 @@ public class ItemShop {
 		        unit.sleep(delay);
 		    }
 	  }
-	
+	//to test without running whole game 
 	public static void main(String args[]) throws InterruptedException
 	{
 		ItemShop runitem = new ItemShop();
