@@ -13,7 +13,7 @@ public class Intro {
 		int flag = 1;
 		//char answersub;
 		String test = "abcd";
-		Scanner scan = new Scanner(System.in);
+		//Scanner scan = new Scanner(System.in);
 		System.out.print("\n\n");
 		System.out.print("  You approach DUNGEON JERICHO, ");
 		System.out.print("  rummored to be filled with the treasures of men from long ago, \n");
